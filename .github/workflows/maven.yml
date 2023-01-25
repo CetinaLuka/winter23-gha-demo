@@ -31,4 +31,4 @@ jobs:
       working-directory: measurements_backend
     - name: Run tests
       working-directory: ./measurements_backend
-      run: ./mvnw -B test
+      run: mvn -B test
