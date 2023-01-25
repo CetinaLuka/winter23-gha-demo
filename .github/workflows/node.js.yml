@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 16
+    - name: Use Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 16
         cache: 'npm'
-        cache-dependency-path: /home/runner/work/winter23/winter23/measurements_frontend/measurement/package-lock.json
+        cache-dependency-path: /home/runner/work/winter23/winter23/measurements_frontend/measurements/package-lock.json
         
     - run: npm ci
       working-directory: measurements_frontend/measurement
