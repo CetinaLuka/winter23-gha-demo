@@ -27,8 +27,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml -DskipTests
+      run: mvn -B package --file pom.xml
       working-directory: measurements_backend
-    - name: Run tests
-      working-directory: ./measurements_backend
-      run: mvn -B test
