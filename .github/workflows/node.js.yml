@@ -19,6 +19,7 @@ jobs:
       with:
         node-version: 16
         cache: 'npm'
+        cache-dependency-path: measurements_frontend/measurement/package-lock.json
         
     - run: npm ci
       working-directory: measurements_frontend/measurement
