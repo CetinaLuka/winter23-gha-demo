@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import si.um.feri.measurements.dao.ProductRepository;
 import si.um.feri.measurements.vao.Product;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class ProductController {
 

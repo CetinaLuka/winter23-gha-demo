@@ -16,7 +16,7 @@ import si.um.feri.measurements.dto.post.PostMeasurementResponse;
 import si.um.feri.measurements.vao.Measurement;
 import si.um.feri.measurements.vao.Product;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class MeasurementPostController {
 
